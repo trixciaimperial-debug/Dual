@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import AuthorBadge from './components/AuthorBadge'
 import Home from './pages/Home'
 import Students from './pages/Students'
 import AddStudent from './pages/AddStudent'
@@ -17,6 +18,7 @@ function App() {
           <Route path="/students/:id" element={<StudentDetails />} />
         </Routes>
       </main>
+      <AuthorBadge />
     </>
   )
 }
